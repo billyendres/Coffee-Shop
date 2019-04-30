@@ -1,19 +1,18 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-// import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Background from "../components/globals/Background"
 import Info from "../components/home/Info"
 
-const IndexPage = ({ data }) => (
+const AboutPage = ({ data }) => (
   // pass in data to render background image
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Background
       img={data.img.childImageSharp.fluid}
-      title="The Shot House"
-      styleClass="default-background"
+      title="About Us"
+      styleClass="about-background"
     />
     <Info />
   </Layout>
@@ -21,7 +20,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "default-background.jpeg" }) {
+    img: file(relativePath: { eq: "about-background.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -32,4 +31,4 @@ export const query = graphql`
 `
 // check gatsby-image-plugin for fragment query info(...gatsby)
 
-export default IndexPage
+export default AboutPage

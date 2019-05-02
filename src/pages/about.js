@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Background from "../components/globals/Background"
-import InfoHome from "../components/home/InfoHome"
+import Info from "../components/home/Info"
 
 const AboutPage = ({ data }) => (
   <Layout>
@@ -13,7 +13,7 @@ const AboutPage = ({ data }) => (
       title="About Us"
       styleClass="about-background"
     />
-    <InfoHome />
+    <Info />
   </Layout>
 )
 

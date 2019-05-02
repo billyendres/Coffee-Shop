@@ -6,7 +6,6 @@ import Background from "../components/globals/Background"
 import InfoHome from "../components/home/InfoHome"
 
 const AboutPage = ({ data }) => (
-  // pass in data to render background image
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Background

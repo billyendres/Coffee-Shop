@@ -9,7 +9,6 @@ import Products from "../components/home/Products"
 import Contact from "../components/home/Contact"
 
 const IndexPage = ({ data }) => (
-  // pass in data to render background image
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Background

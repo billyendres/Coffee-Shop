@@ -1,3 +1,7 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
 .default-background {
   min-height: 100vh;
   display: flex;
@@ -5,6 +9,13 @@
   justify-content: center;
   background-position: center;
   background-size: cover;
+  letter-spacing: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .default-background {
+    letter-spacing: 0rem;
+  }
 }
 
 .about-background {
@@ -14,4 +25,10 @@
   justify-content: center;
   background-position: center;
   background-size: cover;
+  letter-spacing: 1rem;
+}
+
+.menu,
+.contact {
+  background: gainsboro;
 }

@@ -6,9 +6,8 @@ import { FaCartArrowDown } from "react-icons/fa"
 
 const BodyStyle = styled.body`
   color: black;
-  font-size: 1.5rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-  letter-spacing: 0.2rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
 `
 
 export default class Navbar extends Component {
@@ -41,8 +40,7 @@ export default class Navbar extends Component {
     return (
       <BodyStyle>
         <nav className="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-          <img src={logo} alt="logo" />
-          <Link to="/" className="navbar-brand" />
+          <img style={{ paddingRight: "2rem" }} src={logo} alt="logo" />
           <button
             className="navbar-toggler"
             type="button"
@@ -55,7 +53,7 @@ export default class Navbar extends Component {
               {this.state.links.map(link => {
                 return (
                   <li key={link.id} className="nav-item">
-                    <Link to={link.path} className="nav-link text-capitalize">
+                    <Link to={link.path} className="nav-link text-uppercase">
                       {link.text}
                     </Link>
                   </li>

@@ -20,12 +20,12 @@ const ButtonStyle = styled.button`
   }
 `
 
-const Info = () => {
+const InfoHome = () => {
   return (
     <BodyStyle>
       <section className="py-5">
         <div className="container">
-          <Title title="world class coffee" />
+          <Title title="Our Story" />
           <div className="row">
             <div className="col-10 col-sm-8 mx-auto text-center">
               <p className="lead text-muted mb-5">
@@ -41,9 +41,9 @@ const Info = () => {
                 ekfneknfknef ekfnkenfkenf ekfnkenfkenfenfknekfn eknfkenfkefn
                 ekfnkenfkenfenfknekfn kefneknfke
               </p>
-              <Link to="/about">
+              <Link to="/">
                 <ButtonStyle>
-                  <button className="btn text-uppercase">About Us</button>
+                  <button className="btn text-uppercase">Home</button>
                 </ButtonStyle>
               </Link>
             </div>
@@ -53,4 +53,4 @@ const Info = () => {
     </BodyStyle>
   )
 }
-export default Info
+export default InfoHome

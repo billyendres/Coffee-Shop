@@ -1,9 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Background from "../components/globals/Background"
-import Info from "../components/home/Info"
+import InfoHome from "../components/home/InfoHome"
 
 const AboutPage = ({ data }) => (
   // pass in data to render background image
@@ -14,7 +14,7 @@ const AboutPage = ({ data }) => (
       title="About Us"
       styleClass="about-background"
     />
-    <Info />
+    <InfoHome />
   </Layout>
 )
 
@@ -29,6 +29,5 @@ export const query = graphql`
     }
   }
 `
-// check gatsby-image-plugin for fragment query info(...gatsby)
 
 export default AboutPage
